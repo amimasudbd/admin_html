@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Login | AdminHTML</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <link rel="stylesheet"
+          href="assets/css/style.css">
+
+</head>
+
+
+<body class="bg-slate-100 min-h-screen">
+
+    <div class="min-h-screen flex items-center justify-center px-4 py-8">
+
+        <div class="w-full max-w-md">
+
+            <div class="text-center mb-8">
+
+                <div class="w-16 h-16 mx-auto rounded-2xl bg-indigo-600 text-white flex items-center justify-center text-2xl mb-4">
+
+                    <i class="fa-solid fa-layer-group"></i>
+
+                </div>
+
+                <h1 class="text-2xl font-bold text-slate-800">
+                    AdminHTML
+                </h1>
+
+                <p class="text-sm text-slate-400 mt-1">
+                    Sign in to your admin account
+                </p>
+
+            </div>
+
+
+            <div class="bg-white rounded-2xl shadow-xl p-6 md:p-8">
+
+                <form id="loginForm">
+
+                    <div class="mb-5">
+
+                        <label class="block text-sm font-medium text-slate-700 mb-2">
+                            Email Address
+                        </label>
+
+                        <div class="relative">
+
+                            <i class="fa-regular fa-envelope absolute left-4 top-1/2 -translate-y-1/2 text-slate-400"></i>
+
+                            <input
+                                type="email"
+                                id="email"
+                                placeholder="admin@example.com"
+                                class="w-full border border-slate-200 rounded-xl pl-11 pr-4 py-3 outline-none focus:border-indigo-500 focus:ring-2 focus:ring-indigo-100"
+                                required>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="mb-5">
+
+                        <div class="flex items-center justify-between mb-2">
+
+                            <label class="block text-sm font-medium text-slate-700">
+                                Password
+                            </label>
+
+                            <a href="#"
+                               class="text-xs text-indigo-600">
+                                Forgot Password?
+                            </a>
+
+                        </div>
+
+                        <div class="relative">
+
+                            <i class="fa-solid fa-lock absolute left-4 top-1/2 -translate-y-1/2 text-slate-400"></i>
+
+                            <input
+                                type="password"
+                                id="password"
+                                placeholder="••••••••"
+                                class="w-full border border-slate-200 rounded-xl pl-11 pr-12 py-3 outline-none focus:border-indigo-500 focus:ring-2 focus:ring-indigo-100"
+                                required>
+
+                            <button
+                                type="button"
+                                id="togglePassword"
+                                class="absolute right-4 top-1/2 -translate-y-1/2 text-slate-400">
+
+                                <i class="fa-regular fa-eye"></i>
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="flex items-center gap-2 mb-6">
+
+                        <input
+                            type="checkbox"
+                            id="remember"
+                            class="w-4 h-4 accent-indigo-600">
+
+                        <label for="remember"
+                               class="text-sm text-slate-500">
+
+                            Remember me
+
+                        </label>
+
+                    </div>
+
+
+                    <button
+                        type="submit"
+                        class="w-full bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-3 rounded-xl transition">
+
+                        <i class="fa-solid fa-right-to-bracket mr-2"></i>
+
+                        Sign In
+
+                    </button>
+
+                </form>
+
+
+                <div id="loginMessage"
+                     class="hidden mt-4 p-3 rounded-lg text-sm">
+                </div>
+
+            </div>
+
+
+            <div class="text-center mt-6">
+
+                <a href="../index.html"
+                   class="text-sm text-slate-500 hover:text-indigo-600">
+
+                    <i class="fa-solid fa-arrow-left mr-1"></i>
+
+                    Back to Home
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <script>
+
+        const loginForm =
+            document.getElementById("loginForm");
+
+        const loginMessage =
+            document.getElementById("loginMessage");
+
+        const password =
+            document.getElementById("password");
+
+        const togglePassword =
+            document.getElementById("togglePassword");
+
+
+        togglePassword.addEventListener("click", () => {
+
+            if (password.type === "password") {
+
+                password.type = "text";
+
+                togglePassword.innerHTML =
+                    '<i class="fa-regular fa-eye-slash"></i>';
+
+            } else {
+
+                password.type = "password";
+
+                togglePassword.innerHTML =
+                    '<i class="fa-regular fa-eye"></i>';
+
+            }
+
+        });
+
+
+        loginForm.addEventListener("submit", (event) => {
+
+            event.preventDefault();
+
+
+            loginMessage.className =
+                "mt-4 p-3 rounded-lg text-sm bg-green-50 text-green-700";
+
+            loginMessage.textContent =
+                "Login successful. Redirecting...";
+
+
+            setTimeout(() => {
+
+                window.location.href =
+                    "dashboard.htm";
+
+            }, 800);
+
+        });
+
+    </script>
+
+</body>
+
+</html>

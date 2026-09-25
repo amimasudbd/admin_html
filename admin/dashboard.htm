@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Dashboard | AdminHTML</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <link rel="stylesheet"
+          href="assets/css/style.css">
+
+</head>
+
+
+<body class="bg-slate-100">
+
+    <div class="min-h-screen flex">
+
+        <div id="sidebarContainer"></div>
+
+
+        <div class="flex-1 min-w-0">
+
+            <div id="navbarContainer"></div>
+
+
+            <main class="p-4 md:p-6 lg:p-8">
+
+                <div id="headerContainer"></div>
+
+
+                <!-- Statistics -->
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-4 md:gap-6 mb-6">
+
+                    <div class="bg-white rounded-2xl p-5 shadow-sm border border-slate-100">
+
+                        <div class="flex items-center justify-between">
+
+                            <div>
+
+                                <p class="text-sm text-slate-400">
+                                    Total Users
+                                </p>
+
+                                <h2 class="text-2xl font-bold mt-1">
+                                    2,450
+                                </h2>
+
+                            </div>
+
+                            <div class="w-12 h-12 rounded-xl bg-indigo-100 text-indigo-600 flex items-center justify-center">
+
+                                <i class="fa-solid fa-users text-xl"></i>
+
+                            </div>
+
+                        </div>
+
+                        <p class="text-sm text-green-600 mt-4">
+                            <i class="fa-solid fa-arrow-up"></i>
+                            12.5% this month
+                        </p>
+
+                    </div>
+
+
+                    <div class="bg-white rounded-2xl p-5 shadow-sm border border-slate-100">
+
+                        <div class="flex items-center justify-between">
+
+                            <div>
+
+                                <p class="text-sm text-slate-400">
+                                    Revenue
+                                </p>
+
+                                <h2 class="text-2xl font-bold mt-1">
+                                    $48,560
+                                </h2>
+
+                            </div>
+
+                            <div class="w-12 h-12 rounded-xl bg-green-100 text-green-600 flex items-center justify-center">
+
+                                <i class="fa-solid fa-dollar-sign text-xl"></i>
+
+                            </div>
+
+                        </div>
+
+                        <p class="text-sm text-green-600 mt-4">
+                            <i class="fa-solid fa-arrow-up"></i>
+                            8.2% this month
+                        </p>
+
+                    </div>
+
+
+                    <div class="bg-white rounded-2xl p-5 shadow-sm border border-slate-100">
+
+                        <div class="flex items-center justify-between">
+
+                            <div>
+
+                                <p class="text-sm text-slate-400">
+                                    Orders
+                                </p>
+
+                                <h2 class="text-2xl font-bold mt-1">
+                                    1,284
+                                </h2>
+
+                            </div>
+
+                            <div class="w-12 h-12 rounded-xl bg-orange-100 text-orange-600 flex items-center justify-center">
+
+                                <i class="fa-solid fa-cart-shopping text-xl"></i>
+
+                            </div>
+
+                        </div>
+
+                        <p class="text-sm text-red-500 mt-4">
+                            <i class="fa-solid fa-arrow-down"></i>
+                            3.1% this month
+                        </p>
+
+                    </div>
+
+
+                    <div class="bg-white rounded-2xl p-5 shadow-sm border border-slate-100">
+
+                        <div class="flex items-center justify-between">
+
+                            <div>
+
+                                <p class="text-sm text-slate-400">
+                                    Visitors
+                                </p>
+
+                                <h2 class="text-2xl font-bold mt-1">
+                                    18,420
+                                </h2>
+
+                            </div>
+
+                            <div class="w-12 h-12 rounded-xl bg-purple-100 text-purple-600 flex items-center justify-center">
+
+                                <i class="fa-solid fa-chart-line text-xl"></i>
+
+                            </div>
+
+                        </div>
+
+                        <p class="text-sm text-green-600 mt-4">
+                            <i class="fa-solid fa-arrow-up"></i>
+                            18.7% this month
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Main Grid -->
+
+                <div class="grid grid-cols-1 xl:grid-cols-3 gap-6">
+
+                    <!-- Chart -->
+
+                    <div class="xl:col-span-2 bg-white rounded-2xl shadow-sm border border-slate-100 p-5">
+
+                        <div class="flex items-center justify-between mb-6">
+
+                            <div>
+
+                                <h2 class="font-bold text-lg">
+                                    Revenue Overview
+                                </h2>
+
+                                <p class="text-sm text-slate-400">
+                                    Monthly revenue statistics
+                                </p>
+
+                            </div>
+
+                            <select class="border border-slate-200 rounded-lg px-3 py-2 text-sm outline-none">
+
+                                <option>2026</option>
+                                <option>2025</option>
+                                <option>2024</option>
+
+                            </select>
+
+                        </div>
+
+
+                        <div class="h-72 flex items-end gap-2 sm:gap-4">
+
+                            <div class="flex-1 bg-indigo-100 rounded-t-lg h-[35%]"></div>
+
+                            <div class="flex-1 bg-indigo-200 rounded-t-lg h-[55%]"></div>
+
+                            <div class="flex-1 bg-indigo-300 rounded-t-lg h-[45%]"></div>
+
+                            <div class="flex-1 bg-indigo-400 rounded-t-lg h-[70%]"></div>
+
+                            <div class="flex-1 bg-indigo-500 rounded-t-lg h-[60%]"></div>
+
+                            <div class="flex-1 bg-indigo-600 rounded-t-lg h-[82%]"></div>
+
+                            <div class="flex-1 bg-indigo-700 rounded-t-lg h-[72%]"></div>
+
+                            <div class="flex-1 bg-indigo-600 rounded-t-lg h-[90%]"></div>
+
+                            <div class="flex-1 bg-indigo-500 rounded-t-lg h-[75%]"></div>
+
+                            <div class="flex-1 bg-indigo-400 rounded-t-lg h-[65%]"></div>
+
+                            <div class="flex-1 bg-indigo-300 rounded-t-lg h-[80%]"></div>
+
+                            <div class="flex-1 bg-indigo-200 rounded-t-lg h-[95%]"></div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Recent Activity -->
+
+                    <div class="bg-white rounded-2xl shadow-sm border border-slate-100 p-5">
+
+                        <div class="flex items-center justify-between mb-5">
+
+                            <h2 class="font-bold text-lg">
+                                Recent Activity
+                            </h2>
+
+                            <a href="#"
+                               class="text-sm text-indigo-600">
+                                View All
+                            </a>
+
+                        </div>
+
+
+                        <div class="space-y-5">
+
+                            <div class="flex gap-3">
+
+                                <div class="w-9 h-9 rounded-full bg-indigo-100 text-indigo-600 flex items-center justify-center shrink-0">
+
+                                    <i class="fa-solid fa-user-plus text-sm"></i>
+
+                                </div>
+
+                                <div>
+
+                                    <p class="text-sm font-medium">
+                                        New user registered
+                                    </p>
+
+                                    <p class="text-xs text-slate-400 mt-1">
+                                        10 minutes ago
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="flex gap-3">
+
+                                <div class="w-9 h-9 rounded-full bg-green-100 text-green-600 flex items-center justify-center shrink-0">
+
+                                    <i class="fa-solid fa-cart-shopping text-sm"></i>
+
+                                </div>
+
+                                <div>
+
+                                    <p class="text-sm font-medium">
+                                        New order received
+                                    </p>
+
+                                    <p class="text-xs text-slate-400 mt-1">
+                                        25 minutes ago
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="flex gap-3">
+
+                                <div class="w-9 h-9 rounded-full bg-orange-100 text-orange-600 flex items-center justify-center shrink-0">
+
+                                    <i class="fa-solid fa-credit-card text-sm"></i>
+
+                                </div>
+
+                                <div>
+
+                                    <p class="text-sm font-medium">
+                                        Payment received
+                                    </p>
+
+                                    <p class="text-xs text-slate-400 mt-1">
+                                        1 hour ago
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="flex gap-3">
+
+                                <div class="w-9 h-9 rounded-full bg-purple-100 text-purple-600 flex items-center justify-center shrink-0">
+
+                                    <i class="fa-solid fa-gear text-sm"></i>
+
+                                </div>
+
+                                <div>
+
+                                    <p class="text-sm font-medium">
+                                        System settings updated
+                                    </p>
+
+                                    <p class="text-xs text-slate-400 mt-1">
+                                        2 hours ago
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Recent Orders -->
+
+                <div class="bg-white rounded-2xl shadow-sm border border-slate-100 mt-6 overflow-hidden">
+
+                    <div class="p-5 flex items-center justify-between">
+
+                        <div>
+
+                            <h2 class="font-bold text-lg">
+                                Recent Orders
+                            </h2>
+
+                            <p class="text-sm text-slate-400">
+                                Latest customer orders
+                            </p>
+
+                        </div>
+
+                        <a href="#"
+                           class="text-sm text-indigo-600">
+                            View All
+                        </a>
+
+                    </div>
+
+
+                    <div class="overflow-x-auto">
+
+                        <table class="w-full min-w-[700px]">
+
+                            <thead class="bg-slate-50 border-y border-slate-100">
+
+                                <tr>
+
+                                    <th class="text-left px-5 py-3 text-xs font-semibold text-slate-500 uppercase">
+                                        Order
+                                    </th>
+
+                                    <th class="text-left px-5 py-3 text-xs font-semibold text-slate-500 uppercase">
+                                        Customer
+                                    </th>
+
+                                    <th class="text-left px-5 py-3 text-xs font-semibold text-slate-500 uppercase">
+                                        Amount
+                                    </th>
+
+                                    <th class="text-left px-5 py-3 text-xs font-semibold text-slate-500 uppercase">
+                                        Status
+                                    </th>
+
+                                    <th class="text-left px-5 py-3 text-xs font-semibold text-slate-500 uppercase">
+                                        Date
+                                    </th>
+
+                                </tr>
+
+                            </thead>
+
+
+                            <tbody class="divide-y divide-slate-100">
+
+                                <tr>
+
+                                    <td class="px-5 py-4 text-sm font-medium">
+                                        #ORD-1025
+                                    </td>
+
+                                    <td class="px-5 py-4 text-sm">
+                                        John Doe
+                                    </td>
+
+                                    <td class="px-5 py-4 text-sm font-semibold">
+                                        $240.00
+                                    </td>
+
+                                    <td class="px-5 py-4">
+
+                                        <span class="px-2.5 py-1 rounded-full text-xs font-medium bg-green-100 text-green-700">
+                                            Completed
+                                        </span>
+
+                                    </td>
+
+                                    <td class="px-5 py-4 text-sm text-slate-400">
+                                        Sep 25, 2026
+                                    </td>
+
+                                </tr>
+
+
+                                <tr>
+
+                                    <td class="px-5 py-4 text-sm font-medium">
+                                        #ORD-1024
+                                    </td>
+
+                                    <td class="px-5 py-4 text-sm">
+                                        Sarah Smith
+                                    </td>
+
+                                    <td class="px-5 py-4 text-sm font-semibold">
+                                        $180.00
+                                    </td>
+
+                                    <td class="px-5 py-4">
+
+                                        <span class="px-2.5 py-1 rounded-full text-xs font-medium bg-yellow-100 text-yellow-700">
+                                            Pending
+                                        </span>
+
+                                    </td>
+
+                                    <td class="px-5 py-4 text-sm text-slate-400">
+                                        Sep 24, 2026
+                                    </td>
+
+                                </tr>
+
+
+                                <tr>
+
+                                    <td class="px-5 py-4 text-sm font-medium">
+                                        #ORD-1023
+                                    </td>
+
+                                    <td class="px-5 py-4 text-sm">
+                                        Michael Brown
+                                    </td>
+
+                                    <td class="px-5 py-4 text-sm font-semibold">
+                                        $450.00
+                                    </td>
+
+                                    <td class="px-5 py-4">
+
+                                        <span class="px-2.5 py-1 rounded-full text-xs font-medium bg-blue-100 text-blue-700">
+                                            Processing
+                                        </span>
+
+                                    </td>
+
+                                    <td class="px-5 py-4 text-sm text-slate-400">
+                                        Sep 23, 2026
+                                    </td>
+
+                                </tr>
+
+                            </tbody>
+
+                        </table>
+
+                    </div>
+
+                </div>
+
+
+                <div id="footerContainer"></div>
+
+            </main>
+
+        </div>
+
+    </div>
+
+
+    <script src="assets/js/include.js"></script>
+
+    <script src="assets/js/app.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,106 @@
+<nav class="h-16 bg-white border-b border-slate-200 flex items-center justify-between px-4 lg:px-6">
+
+    <div class="flex items-center gap-3">
+
+        <button id="mobileSidebarButton"
+                class="lg:hidden w-10 h-10 rounded-lg hover:bg-slate-100 text-slate-600">
+
+            <i class="fa-solid fa-bars"></i>
+
+        </button>
+
+        <a href="dashboard.htm"
+           class="font-bold text-xl text-slate-800">
+
+            0192425<span class="text-indigo-600">2627</span>
+
+        </a>
+
+    </div>
+
+
+    <div class="flex items-center gap-2">
+
+        <button id="darkModeButton"
+                class="w-10 h-10 rounded-lg hover:bg-slate-100 text-slate-600">
+
+            <i class="fa-solid fa-moon"></i>
+
+        </button>
+
+
+        <button class="w-10 h-10 rounded-lg hover:bg-slate-100 text-slate-600 relative">
+
+            <i class="fa-regular fa-bell"></i>
+
+            <span class="absolute top-2 right-2 w-2 h-2 bg-red-500 rounded-full"></span>
+
+        </button>
+
+
+        <div class="relative">
+
+            <button id="userMenuButton"
+                    class="flex items-center gap-2 p-1.5 rounded-xl hover:bg-slate-100">
+
+                <img
+                    src="https://i.pravatar.cc/100?img=12"
+                    class="w-9 h-9 rounded-full"
+                    alt="User">
+
+                <div class="hidden md:block text-left">
+
+                    <p class="text-sm font-semibold text-slate-700">
+                        IT MASUD
+                    </p>
+
+                    <p class="text-xs text-slate-400">
+                        Admin
+                    </p>
+
+                </div>
+
+                <i class="fa-solid fa-chevron-down text-xs text-slate-400"></i>
+
+            </button>
+
+
+            <div id="userMenu"
+                 class="hidden absolute right-0 top-14 w-52 bg-white rounded-xl shadow-xl border border-slate-100 py-2 z-50">
+
+                <a href="pages/profile.htm"
+                   class="flex items-center gap-3 px-4 py-2.5 text-sm hover:bg-slate-50">
+
+                    <i class="fa-regular fa-user text-slate-400"></i>
+
+                    Profile
+
+                </a>
+
+                <a href="pages/settings.htm"
+                   class="flex items-center gap-3 px-4 py-2.5 text-sm hover:bg-slate-50">
+
+                    <i class="fa-solid fa-gear text-slate-400"></i>
+
+                    Settings
+
+                </a>
+
+                <div class="border-t my-2"></div>
+
+                <a href="logout.htm"
+                   class="flex items-center gap-3 px-4 py-2.5 text-sm text-red-600 hover:bg-red-50">
+
+                    <i class="fa-solid fa-right-from-bracket"></i>
+
+                    Logout
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</nav>
